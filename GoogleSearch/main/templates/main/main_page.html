@@ -1,0 +1,213 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+
+* {
+     padding:0px;
+    margin: 0px;
+   box-sizing: border-box;
+   font-family: 'arial',sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+section header ul li button{
+    background: #4584ef;
+    border: blue;
+    outline: none;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+section.main {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .main .searchBox{
+   position: relative;
+   width: 100%;
+   margin-top: 20px;
+
+}
+section .main .searchBox .search{
+width: 100%;
+padding: 13px;
+padding-left: 45px;
+padding-right: 60px;
+border-radius: 30px;
+border: 1px solid #ccc;
+outline: none;
+font-size: px;
+}
+section .main .searchBox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none;
+}
+section .main .buttons{
+    margin-top: 20px;  
+}
+section .main .buttons button{
+    margin: auto;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+}
+section .main .buttons button:hover{
+border: 1px solid #ccc;
+}
+section .main .languages{
+    display: flex;
+    margin-top: 30px;
+}
+section .main .languages li{
+    list-style: none;
+    margin: 0 5px;
+    font-size: 13px;
+}
+section .main .languages li a :hover
+{
+    text-decoration: none;
+    color: black;
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 100px; 
+    background: white;
+}
+section .footer .row{
+    padding: 15px 25px;
+    border-top: 1px solid crimson;  
+}
+section .footer .row .row2{
+    display: flex;
+    justify-content: space-between;
+}
+section .footer .row .row2 ul{
+    display: flex;
+}
+section .footer .row .row2 ul li{
+    list-style: none;
+}
+section .footer .row .row2 ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(61, 64, 66);
+    margin-right: 25px;
+}
+section .footer .row .row2 ul:nth-child(2) li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(61, 64, 66);
+    margin-right: 0px;
+    margin-left: 25px;
+}
+
+</style>
+<body>
+
+<section>
+    <header>
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><span class="material-symbols-outlined">
+                apps
+                </span></li>
+            <li><button>Sing In</button></li>
+        </ul>
+    </header>
+    <div class="main">
+        <img src="{% static 'images/google-logo.png' %}" >
+    <div class="searchBox">
+        <input type="text" class="search">
+        <div class="icons">
+            <div><img src="{% static 'images/mircophone.png' %}"width=20></div>
+            <div><img src="{% static 'images/camera.png' %}"width=20 ></div>
+            <li><span class="material-symbols-outlined">
+                search
+                </span> 
+        </div>
+    </div>
+    <div class="buttons">
+        <button>Google Search</button>
+        <button>I,m Feeling Lucky</button>
+    </div>
+    <ul class="languages">
+    <li>Google offered in :</li>
+    <li><a href="#">العربية</a></li>
+    </ul>
+    </div>
+    <div class="footer">
+        <div class="row1 row1">
+            <p class="country">Saudi Arabia</p>
+        </div>
+        <div class="row2 row2"> 
+            <ul>
+                <li><a href="#">Advertising</a></li> 
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How search works</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+</section>       
