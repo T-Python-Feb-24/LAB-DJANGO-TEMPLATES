@@ -1,0 +1,175 @@
+
+
+
+
+
+.right-nav {
+
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 20px;
+
+}
+
+.signbutton{
+  background-color: #256ae1;
+  color: #fff;
+  border:none;
+  border-radius:5px;
+  padding:9px 23px;
+  position:relative;
+  bottom:7px;
+  
+  
+}
+
+a {
+  color: #363333;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size:16px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#apps{
+  padding-top: 10px;
+  color: #4f4d4d;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+  
+}
+
+.logo{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 400px;
+  margin: 20px;
+}
+
+.search{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  
+
+}
+
+.search{
+
+  margin:0 auto;
+  width:700px;
+  border-radius:30px;
+  height: 40px;
+  border:1px solid #dcdcdc;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 70px;
+  padding-bottom: 5px;
+  
+ 
+
+}
+
+.cam{
+
+  height: 40px;
+  margin-left: 5px;
+  position: absolute;
+  
+  
+  
+}
+
+
+.mic{
+  height: 40px;
+  position: relative;
+  right: 0px;
+  
+}
+
+input{
+  flex: 1px;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  margin-left: 10px;
+  
+}
+.search:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.material-icons{
+  padding-top: 5px;
+}
+
+
+.buttons{
+  margin-top:30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button{
+  background-color: rgb(238, 235, 235);
+  border:none;
+  color:#707070;
+  font-size:15px;
+  padding: 10px 20px;
+  margin:5px;
+  border-radius:4px;
+  outline:none;
+}
+
+.button:hover{
+  border: 1px solid #c8c8c8;
+  padding: 9px 19px;
+  color:#808080;
+}
+
+.button:focus{
+  border:1px solid #4885ed;
+  padding: 9px 19px;
+}
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  padding: 20px 30px;
+  background-color:  rgb(238, 235, 235);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+
+}
+
+
+.left-footer{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  justify-content: left;
+}
+
