@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="{% static 'styles/google_style.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <a href="https://mail.google.com/">Gmail</a>
+        <a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a>
+        <image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9"></image>
+        <button>Sign in</button>
+    </nav>
+
+    <div class="google-pic-div">
+        <img src="{% static 'resources/google-logo.png'%}" alt="Google Logo">
+    </div>
+
+    <div class="search-container">
+        <div class="lef_side">
+            <img src="{% static 'resources/search-icon.png'%}" alt="search icon">
+            <input type="search" placeholder="search...">
+        </div>
+        
+        <div class="right_side">
+            <img src="{% static 'resources/mircophone.png'%}" alt="Microphone">
+            <img src="{% static 'resources/camera.png'%}" alt="Camera">
+        </div>
+    </div>
+
+    <div class="two_buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+
+    <div class="under_buttons">
+        <p>Google offered in: </p>
+        <a href="">العربية</a>
+    </div>
+
+    <div class="first-tail">
+       <h6>Saudi Arabia</h6> 
+    </div>
+
+    <div class="second-tail">
+        <div class="left-tail">
+            <h6>About</h6>
+            <h6>Advertising</h6>
+            <h6>Business</h6>
+            <h6>How Search works</h6>
+        </div>
+
+        <div class="right-tail">
+            <h6>Privacy</h6>
+            <a href="/Google/google_main/templates/google_main/terms.html">Term</a>
+            <h6>Settings</h6>
+        </div>
+    </div>
+</body>
+</html>
