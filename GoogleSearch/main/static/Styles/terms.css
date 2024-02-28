@@ -57,3 +57,13 @@ main img {
     margin-top: 50px;
     width: 800px;
 }
+ main a {
+    color: blue;
+    text-decoration: none;
+ }
+
+ main a:hover {
+    color: blueviolet;
+    /* text-shadow: underline; */
+    text-decoration: underline;
+ }

@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/static/images/google.ico">
+    <link rel="icon" href="{% static 'images/google.ico' %}">
 
-    <link rel="stylesheet" href="/static/Styles/terms.css">
+    <link rel="stylesheet" href="{% static 'Styles/terms.css' %}">
     <!-- Google Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.google.com/">
     <link rel="preconnect" href="https://fonts.google.com/icons">
@@ -28,9 +28,11 @@
     </header>
 
     <main>
-        <img src="/static/images/tos_main_illustration.svg" alt="TermsOfService Illustration">
-
         
+        <img src="{% static 'images/tos_main_illustration.svg' %}" alt="TermsOfService Illustration">
+        <a href="{% url 'main:google_term_page' %}">Google Terms Of Service Document</a>
+        
+
     </main>
 </body>
 </html>

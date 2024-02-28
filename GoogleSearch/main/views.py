@@ -14,3 +14,9 @@ def term_page(request:HttpRequest):
     url_term = resolve_url('main:term_page')
     print(url_term)
     return render(request, 'main/term.html')
+
+def google_term_page(request:HttpRequest):
+
+    url_term = resolve_url('main:google_term_page')
+    print(url_term)
+    return render(request, 'main/term_base.html')
