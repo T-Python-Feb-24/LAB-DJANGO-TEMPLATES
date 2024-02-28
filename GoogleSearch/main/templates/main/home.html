@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/images/google.ico">
+    <!-- Home CSS Style-->
+    <link rel="stylesheet" href="{% static 'Styles/home.css' %}">
+    
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.google.com/">
+    <link rel="preconnect" href="https://fonts.google.com/icons">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Google</title>
+
+</head>
+<body>
+    <header>
+        <nav class="right-nav">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <!-- Apps Icon -->
+            <span class="material-symbols-outlined"> apps </span>
+            <button class="sign-button">Sign in</button>
+        </nav>
+    </header>
+
+    <main>
+        <img src="{% static 'images/google-logo.png' %}" alt="Google Logo">
+
+            <div class="search-bar">
+                <!-- Search Icon -->
+                <span class="material-symbols-outlined search" > search </span>
+                <!-- Search-bar text-->
+                <input type="text" placeholder="Search...">
+                <!-- Mic Icon-->
+                <img class="mic" src="static/images/mircophone.png" alt="Microphone">
+                <!-- Camera Icon -->
+                <img class="cam" src="{% static 'images/camera.png' %}" alt="Camera">
+
+                <button class="btn">Google Search</button>
+                <button class="btn">I'm Feeling Lucky</button>
+            </div>
+
+        <div class="language">
+            Google offerd in: <a href="#"> العربية</a>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Saudi Arabia</h4>
+        <hr>
+        <div class="links">
+            <div class="foot-left">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Businesse</a>
+                <a href="#">How Search Work</a>
+            </div>
+        
+            <div class="foot-right">
+                <a href="#">Privacy</a>
+                <a href="{% url 'main:term_page' %}">Terms</a>
+                <a href="#">Settings</a>
+            </div> 
+        </div>
+
+    </footer>
+</body>
+</html>

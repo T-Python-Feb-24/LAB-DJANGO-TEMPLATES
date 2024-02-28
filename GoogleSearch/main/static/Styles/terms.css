@@ -1,0 +1,59 @@
+* {
+    padding:0px;
+    margin: 0px;
+    font-family: "Cabin", sans-serif;
+}
+
+nav {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:right;
+    column-gap: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.sign-button {
+    color: white;
+    background-color:cornflowerblue;
+    padding: 10px 20px;
+    border: hidden;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: gray;
+}
+
+main {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+main img {
+    display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 800px;
+}
