@@ -55,7 +55,7 @@ main img {
     display: block;
     margin: 0px auto;
     margin-top: 50px;
-    width: 800px;
+    width: 700px;
 }
  main a {
     color: blue;
@@ -66,4 +66,8 @@ main img {
     color: blueviolet;
     /* text-shadow: underline; */
     text-decoration: underline;
+ }
+
+ .div-terms {
+    margin: 0px 169px;
  }
