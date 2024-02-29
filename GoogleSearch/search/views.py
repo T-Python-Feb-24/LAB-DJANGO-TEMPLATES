@@ -8,3 +8,4 @@ def home(request):
 
 def terms_of_service(request):
     return render(request, 'search/terms.html')
+
