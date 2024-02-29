@@ -1,0 +1,171 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555;
+    
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 15px;
+    padding: 10px 20px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.signing{
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+#apps-icon {
+    
+    padding-top: 6px;
+}
+
+.nav_bar{
+    word-spacing: 15px;
+    padding-top: 8px;
+}
+
+.searching-bar{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 300px;
+}
+
+form{
+    position: relative;
+    margin-top: 30px;
+}
+
+input {
+    width: 580px;
+    height: 45px;
+    padding-left: 50px;
+    font-size: 1.2rem;
+    border-radius: 45px;
+    border: 1px solid #d3d3d3;
+}
+
+input:hover {
+    box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
+}
+
+input:focus{
+    outline: none
+}
+
+
+.mic{
+    width: 30px;
+    position: absolute;
+    top: 7px;
+    left: 500px;
+}
+
+.cam{
+    width: 30px;
+    position: absolute;
+    top: 7px;
+    left: 540px;
+}
+
+#search-icon{
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.buttons{
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button{
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    background-color: #f8f9f8;
+    border-radius: 5px;
+}
+
+button:hover{
+    border: 1px solid #eee;
+    box-shadow: 0 0 2px 1px rgba(189, 189, 189, 0.5);
+    cursor: pointer;
+}
+
+.translation{
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.arabic{
+    color: blue;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.panel{
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.country{
+    color: black;
+    padding-left: 10px;
+}
+
+.left-side a{
+    color: black;
+    text-decoration: none;
+    padding-inline: 15px;
+}
+
+.right-side a{
+    color: black;
+    text-decoration: none;
+    padding-inline: 15px;
+}
