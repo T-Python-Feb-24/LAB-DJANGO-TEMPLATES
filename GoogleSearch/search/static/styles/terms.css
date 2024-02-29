@@ -1,0 +1,130 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555;
+
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    background: #ffffff;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header a, .footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 15px;
+    padding: 10px 20px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+}
+
+
+.sign-button {
+    background-color: #4285f4; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.terms-content {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.terms-content img {
+    
+     display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 800px;
+    
+}
+
+
+
+.terms-content h3, p, b {
+    text-align: center;
+
+}
+
+.terms-content p a {
+    display: inline-block; /* This makes the anchor behave like a block element */
+    text-align: center;
+} 
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.sign-button {
+    color: white;
+    background-color:cornflowerblue;
+    padding: 10px 20px;
+    border: hidden;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: gray;
+}
+
+main {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+main img {
+    display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 800px;
+}
+ main a {
+    color: blue;
+    text-decoration: none;
+ }
+
+ main a:hover {
+    color: blueviolet;
+    /* text-shadow: underline; */
+    text-decoration: underline;
+ } 

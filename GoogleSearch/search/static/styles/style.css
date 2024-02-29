@@ -1,0 +1,41 @@
+
+/* terms.css */
+
+div a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    left: 780px;
+    bottom: -3px;
+}
+
+.material-symbols-outlined {
+    transform: translateX(780px);
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+button {
+    background-color: rgb(65, 65, 250);
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    color: white;
+    margin-bottom: 5px;
+    transform: translateX(800px);
+    position: relative;
+    top: -6px;
+}
+
+a {
+    color: rgb(60, 60, 244);
+    text-decoration: none;
+}
+
+nav img {
+    width: 800px;
+    height: 200px;
+    margin: 40px 90px;
+}

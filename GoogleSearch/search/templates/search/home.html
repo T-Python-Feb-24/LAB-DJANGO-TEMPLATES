@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoogleSearch</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="{% static 'styles/style.css' %}" rel="stylesheet" />
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="/">Gmail</a>
+            <a href="">Images</a>
+        </div>
+        <div class="nav-right">
+            <span id="icon" class="material-symbols-outlined">apps</span>
+            <button class="sign_In_button">Sign In</button>
+        </div>
+    </nav>
+   
+   
+    <div class="images-container">
+    <img src="{% static 'logo/google-logo.png' %}" alt="Google Logo" class="google-logo" />
+    <div class="search-box">
+        <form class="search-form">
+            
+            <button type="button" class="icon-button search-icon" aria-label="Search with Google">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+            
+            <input type="text" class="search-input" placeholder=""  />
+            <div class="icon-container">
+                <button type="button" class="icon-button" aria-label="Search by images">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </button>
+                <button type="button" class="icon-button" aria-label="Search by voice">
+                    <span class="material-symbols-outlined">mic</span>
+                </button>
+            </div>
+            
+            
+        </form>
+
+    </div>
+</div>
+<div class="button-container">
+    <div class="buttons">
+        <button type="submit" class="form-button" name="btn" value="search">Google Search</button>
+        <button type="submit" class="form-button" name="btn" value="lucky">I'm Feeling Lucky</button>
+    </div>
+    <h6 class="google-offered">Google offered in: العربية</h6>
+</div>
+        <footer>
+    <div class="country-name">Saudi Arabia</div>
+    <div class="bottom-bar">
+        <div class="left-section">
+            <span>About </span>
+            <span>Advertising</span>
+            <span>Business</span>
+            <span>How Search Works</span>
+        </div>
+        <div class="right-section">
+            <span>Privacy</span>
+            <a href="/terms">Terms</a>
+            <span>Settings</span>
+        </div>
+    </div>
+    
+</footer>
+   
+</body>
+</html>  
