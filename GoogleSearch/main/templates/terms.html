@@ -1,19 +1,15 @@
-{% load static %}
+{% extends "base.html" %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms</title>
+    {% block style %}
     <link rel="stylesheet" href="{% static 'css/terms.css' %}" />
+    {% endblock style %} {% block title %}Terms{% endblock title %}
   </head>
   <body>
-    <nav>
-      <a href="#">Gmail</a>
-      <a href="#">Images</a>
-      <img src="{% static "icon/apps.png" %}" />
-      <button>Sign in</button>
-    </nav>
+    {% block content %}
     <div class="main-illus">
       <img src="{% static "images/tos_main_illustration.svg" %}" alt="" >
     </div>
@@ -155,6 +151,8 @@
           >service-specific additional terms and policies</a
         >.
       </p>
+      <br /><br />
     </div>
+    {% endblock content %}
   </body>
 </html>
