@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="{% static 'style/home.css' %}" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <header>
+        <nav class="main_nav">
+            <ul class="nav">
+            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a></li>
+            <li><a href="https://www.google.com/imghp?hl=ar&tab=ri&authuser=0&ogbl">imege</a></li>
+            <li><span class="app">apps</span></li>
+            <li><button>Sign in</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="logo">
+             <img src="{% static 'image/google-logo.png' %}" alt="google logo" />   
+    <div class="search">
+        <div class="search_input">
+            <input type="text">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </div>
+    </div>
+        <div class="icon">
+                <img src="{% static 'image/mircophone.png' %}" alt="mircopphone">
+                <img src="{% static 'image/camera.png' %}" alt="camera">
+        </div>
+    </div>
+        <div class="button">
+            <button>Google Search </button>
+            <button>I'm Feeling Luck</button>  
+        </div>
+        <div>
+            <ul class="langugees">
+                <li>Google offered in:</li>
+                <li><a href="#">العربية</a></li>
+            </ul>
+            
+        </div>
+    <footer>
+        <div class="footer">
+            <div class="country">
+                <p>Saudi Arabia</p>
+            </div>
+                <div class="about">
+                    <ul>
+                        <li><P>About</P></li>
+                        <li><P>Advertising</P></li>
+                        <li><P>Business</P></li>
+                        <li><P>How Search works</P></li>
+                    </ul>
+                </div>
+                <div class="terms">
+                        <ul>
+                            <li><P>Privacy</P></li>
+                            <li><a href="terms_page.html">Temes</a></li>
+                            <li><P>Setting</P></li>
+                        </ul>
+                </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

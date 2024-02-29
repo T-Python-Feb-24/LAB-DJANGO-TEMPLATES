@@ -1,0 +1,115 @@
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .main_nav {
+            display:inherit;
+            justify-content: space-between;
+            margin: 20px;
+
+        }
+        ul{
+            list-style: none;
+        }
+        .main_nav a{
+            margin-right: 20px;
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        .nav{
+            display:inherit;
+            width: 100%;
+            justify-content: right;
+        }
+        .nav button{
+            color:whitesmoke;
+            background: blue;
+            border: 5px solid blue;
+            border-radius: 5px;
+            
+        }
+        .app{
+            margin-right: 10px;
+        }
+        .logo{
+            display: inherit;
+            margin: auto;
+            flex-direction: column;
+        }
+        .logo img{
+            object-fit: contain;
+            height: 100px;
+            justify-content: center;
+        }
+        .search{
+            position: relative;
+            width: 100px;
+            margin-top: 20px;
+            justify-content: center;
+            
+        }
+        .search_input{
+            display: flex;
+            align-items: center;
+            border: 1px solid lightgrey;
+            height: 30px;
+            padding: 10px 20px;
+            width: 75vw;
+            border-radius: 50px;
+            margin: 0 auto;
+            margin-top: 40px;
+            max-width: 560px;
+        }
+        .search_input input{
+            flex: 1;
+            padding: 10px 20px;
+            border: none;
+        }
+        .button{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center; 
+        }  
+
+        .button button{
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #f8f8f8;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            justify-content: center; 
+        }
+        .langugees{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center; 
+        }  
+        .search_input.icon{
+            position: absolute;
+            top: 0; 
+            width: 100%;
+            display: flex;
+            padding: 12px 20px;
+            justify-content : flex-end;
+            align-items: center; 
+            pointer-events: none;
+            
+            }  
+        .footer{
+            display:inline-block;
+            position: fixed;
+            border: 1px solid lightgrey;
+            background-color: #f8f8f8;
+            width: 1000px;
+            height: 80px;
+            flex-direction: column;
+            
+        }    
