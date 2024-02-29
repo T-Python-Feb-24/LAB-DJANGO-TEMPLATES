@@ -94,11 +94,17 @@ nav button {
 	top: 13px;
 	left: 14px;
 }
-.s-box .vs-icon {
-	width: 14px;
+.s-box .mircophone-icon {
+	width: 24px;
 	position: absolute;
 	top: 13px;
-	right: 24px;
+	right: 10px;
+}
+.s-box .camera-icon {
+	width: 24px;
+	position: absolute;
+	top: 13px;
+	right: 40px;
 }
 .s-btn {
 	border: 1px solid transparent;
@@ -130,6 +136,10 @@ nav button {
 	text-decoration: underline;
 }
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 	background: #f2f2f2;
 }
 footer h4 {
@@ -143,7 +153,7 @@ footer h4 {
 footer a {
 	color: #5f6368;
 	display: inline-block;
-	padding: 12px 11.3px;
+	padding: 12px ;
 	font-size: 14px;
 }
 footer a:hover {
@@ -158,5 +168,6 @@ footer a:hover {
 	flex: 1;
 }
 .link-2 {
+  border-bottom: 1px;
 	padding-right: 18.7px;
 }

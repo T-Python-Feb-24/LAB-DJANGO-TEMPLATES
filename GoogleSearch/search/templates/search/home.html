@@ -1,6 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Search</title>
   <style>
@@ -223,7 +225,7 @@ footer a:hover {
       </div>
       <div class="link-2">
         <a href="">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="{% url 'search:terms_of_service'%}">Terms</a>
         <a href="#">Settings</a>
       </div>
     </div>
