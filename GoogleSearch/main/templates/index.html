@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'icon/Google.png' %}"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Google</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+      <img src="{% static "icon/apps.png" %}" />
+      <button>Sign in</button>
+    </nav>
+    <section class="section-1">
+      <img src="{% static "images/google-logo.png" %}" class="logo" />
+      <form>
+        <br /><br />
+        <div class="s-box">
+          <img src="{% static "icon/search.svg"%}" class="search-icon" />
+          <input type="text" class="s-input" />
+          <img src="{% static "icon/camera.png"%}" class="camera-icon" />
+          <img src="{% static "icon/mircophone.png"%}" class="vs-icon" />
+          <input type="submit" class="s-btn" value="Google Search" />
+          <input type="submit" class="s-btn" value="I'm Feeling Lucky" />
+        </div>
+      </form>
+      <div class="lang">
+        Google offered in:
+        <a href="#">العربية</a>
+      </div>
+    </section>
+    <footer>
+      <h4>Saudi Arabia</h4>
+      <div class="links">
+        <div class="link-1">
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">How Search works</a>
+        </div>
+        <div class="link-2">
+          <a href="#">Privacy</a>
+          <a href="{% url "main:terms_page" %}">Terms</a>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
