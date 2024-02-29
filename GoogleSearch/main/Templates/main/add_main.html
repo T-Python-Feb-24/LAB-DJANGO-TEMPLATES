@@ -1,0 +1,80 @@
+{ % load static % }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+       
+p {
+  border-bottom: 6px solid rgb(246, 238, 238);
+  background-color: rgb(174, 164, 164);
+}
+
+div {
+  border: 1px solid rgb(235, 238, 231);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: white;
+}
+</style>
+
+    
+</head>
+<body>
+
+  <ul>
+    <li><a href="#">Gmail</a></li>
+    <li><a href="#">Images</a></li>
+    <span class="material-symbols-outlined">
+        
+        </span>
+</ul>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    sign in</button>
+    
+
+
+
+  
+    
+    
+
+
+
+
+
+    <p id="demo"></p>
+    <p>Google offered in:</p>
+     <p>العربيه</p>
+     <p>Saudi Arabia</p>
+    
+     <p class="round3">Roundest border</p>
+
+  <img src="{% static 'images/google-logo.png' %}" /> 
+
+  <div>
+    <img src ="{% static 'images/camera.png' %}" />
+    <img src ="{% static 'images/mircophone.png' %}" />
+    </div>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    google search</button>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    i'm Feeling Lucky</button>
+    <p id="demo"></p>
+
+    
+    <p id="demo"></p>
+    <p>About    Advertising       Business    How search works  </p>
+    <p>privacy  Terms   Settings</p>
+    
+</body>
+</html>
