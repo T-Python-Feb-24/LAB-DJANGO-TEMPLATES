@@ -1,0 +1,81 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+    div a{
+           color: black;
+           text-decoration: none;
+           margin-right: 20px;
+           float: left;
+           position: relative;
+           left: 780px;
+           bottom:-3px;
+        }
+        
+        
+        .material-symbols-outlined {
+        transform: translateX(780px);
+          
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+         
+        }
+        button{
+          background-color: rgb(65, 65, 250);
+          border: none;
+          border-radius: 5px;
+          width: 70px;
+          height: 30px;
+          color: white;
+          margin-bottom: 5px;
+          transform: translateX(800px);
+          position: relative;
+          top: -6px
+        }
+       a{
+            color: rgb(60, 60, 244);
+            text-decoration: none;
+        }
+
+        nav img {
+          width: 800px;
+          height: 200px;
+          margin: 40px 90px;
+
+        }
+        
+</style>
+</head>
+<body>
+    <div class="right-nav">
+        <a href="/"> Images </a>
+        <a href="/"> Gmail </a>
+        <span class="material-symbols-outlined">
+                  apps
+                  </span>
+        <button>Sign in</button>
+      </div> 
+      <nav>
+        <img src="{% static 'images/terms.png' %}" />
+      </nav>
+      
+      <h3>GOOGLE TERMS OF SERVICE</h3>
+      <p>Effective 5 January 2022 | <a href="/">Archived versions</a> |<a href="/"> Download PDF</a>
+       <a href="/">Country version: </a> Arabia </p>
+     <h3>What’s covered in these terms</h3>
+       <b>We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect from us as you use Google<br>
+        <a href="/"> services </a> , and what we expect from you.<br>
+    </b>
+        These Terms of Service reflect<a href="/"> the way that Google’s business works</a>, the laws that apply to our company, and <a href="/">things that we’ve always believed to be true. </a> as a <br>
+        result, these Terms of Service help define Google’s relationship with you as you interact with our services. For example, these terms include the following topic headings:</p>
+      
+      </body>
+</html>
