@@ -1,0 +1,277 @@
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+body{
+  background-color: #1e1e20;
+  
+}
+
+.right-nav {
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  
+  }
+  
+  .signbutton{
+    background-color: #256ae1;
+    color: #fff;
+    border:none;
+    border-radius:5px;
+    padding:9px 23px;
+    position:relative;
+    bottom:7px;
+    
+    
+  }
+
+  a {
+    color: #363333;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size:16px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #apps{
+    padding-top: 10px;
+    color: #5b5b5c;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  
+    
+  }
+
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding: 20px 30px;
+    background-color:  rgb(238, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  
+  .SA{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    height: 85px;
+      background: #f2f2f2;
+  
+  }
+  
+  footer {
+  
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    height: 40px;
+      background: #f2f2f2;
+    border-top: 1px solid rgb(72, 72, 72);
+  }
+  
+  
+  footer .left-footer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: left;
+  }
+  
+  footer .right-footer{
+  
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: right;
+  }
+  
+ 
+  /* this section for style.html*/
+  
+
+
+  .logo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 400px;
+    margin: 20px;
+  }
+
+  .box{
+    
+  margin:0 auto;
+  width:700px;
+  border-radius:30px;
+  height: 40px;
+  border:5px var(--clr-1);
+  background: var(--clr-1);
+  padding-left: px;
+  padding-top: 10px;
+  padding-right: 70px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+  position: relative;
+
+}
+
+.box::before, .box::after{
+
+  content: "";
+  position: absolute;
+  inset: -0.2rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  border-radius: inherit;
+  animation: rotation 3s linear infinite;
+}
+
+.box::after{
+  filter: blur(1.5rem);
+}
+
+  :root {
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #8f2d4c;
+    --clr-5: #77547c;
+  }
+
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 360deg;
+    }
+    100% {
+      --gradient-angle: 0deg;
+    }
+  }
+  
+  .search{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+  
+    
+  
+  }
+  
+  .search{
+  
+  width:700px;
+  border-radius:30px;
+  border:1px var(--clr-1);
+  padding-left: 90px;
+  padding-top:3px;
+  padding-right: 70px;
+  padding-bottom: 5px;
+    
+   
+  
+  }
+  
+  
+  input{
+    width: 630px;
+    height: 33px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    margin-left: 10px;
+    position: relative;
+    background-color: #052b2f;
+    color: white;
+    
+  }
+
+
+  a {
+    color: #f2f2f2;
+  }
+
+ .signbutton{
+    background-color: #8f2d4c;
+  }
+
+footer , .SA{
+    background-color: #303030;
+    
+  }
+
+
+
+  .buttons{
+    position: absolute;
+    margin-top:150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  .button{
+    background-color: rgb(238, 235, 235);
+    border:none;
+    color:#8f2d4c;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
+  }
+  
+  .button:hover{
+    border: 3px solid #8f2d4c;
+    padding: 9px 19px;
+    color:#808080;
+  }
+  
+  .button:focus{
+    border:1px solid #447bad;
+    padding: 9px 19px;
+  }
+  
+ 
+
+
+

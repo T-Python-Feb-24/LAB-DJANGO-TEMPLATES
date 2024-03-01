@@ -8,3 +8,6 @@ def home(request: HttpRequest):
 
 def term(request: HttpRequest):
  return render(request,"main/terms.html")
+
+def style(request: HttpRequest):
+ return render(request,"main/style.html")
