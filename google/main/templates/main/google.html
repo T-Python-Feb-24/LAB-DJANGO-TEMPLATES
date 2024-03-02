@@ -1,31 +1,9 @@
+{% extends "main/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>google</title>
-    
-    <link rel="stylesheet" href={% static 'style/home_page.css' %}>
 
+{% block title %} Google Search{% endblock %}
 
-</head>
-
-
-<body>
-<!--القسم الأول-->
-    <div class = "first">
-        <h6>Gamil</h6>
-        <h6>Images</h6>
-        <span class="material-symbols-outlined">
-            apps
-            </span> <!-- (apps)حطي صورة ال -->
-        <button id="sign-button">Sign in </button> <!-- لونها ازرق-->
-    </div>
-
-<!--القسم الثاني-->
+{% block content %}
     <div class ="middle">
         <img src="{% static 'images/google-logo.png' %}"  id ="google_logo"/> <!-- صورة قوقل-->
 
@@ -45,28 +23,5 @@
         <p>Google offered in : العربية</p>
     </div>
 
-<!-- القسم الاخير-->
+{% endblock content %}
 
-    <div class="footer">
-        <div class='first-footer'>
-            <h5>Saudi Arabia </h5>
-            <hr>
-        </div>
-        <div class="footer-content">   
-            <div class="left-footer">
-                <h5>About</h5>
-                <h5>Advertising</h5>
-                <h5>Business</h5>
-                <h5>How Search Works</h5>
-            </div>
-            <div class="right-footer">
-                <h5>Privacy</h5>
-                <h5>Terms</h5> <!-- هنا الرابط-->
-                <h5>Settings</h5>
-            </div>
-        </div>
-    </div>
-   
-
-</body>
-</html>

@@ -1,0 +1,80 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Terms{% endblock title %}
+{% block style %} <link rel="stylesheet" href="{% static "style/terms_page.css" %}"> {% endblock  %}
+
+{% block content %}
+
+<div class="main-section">
+    <img src="{% static "images/tos_main_illustration.svg" %}" id ="terms-img"/>
+    <div class='section-a'>
+        <p id="p-1">GOOGLE TERMS OF SERVICE</p>
+        <p>Effective January 5, 2022 <span class="gray">|</span><a class="blue-words" href=""> Archived versions</a> <span class="gray">|</span><a class="blue-words" href="">Download PDF</a></p>
+        <p id="p-3"><a href="" class="underline">Country version:</a> Saudi Arabia</p>
+    </div>
+    
+    <div class="section-b">
+        <p clss="section-b-firstline">What’s covered in these terms</p>
+        <p>We know it’s tempting to skip these Terms of <br>
+        Service, but it’s important to establish what you <br> 
+        can expect from us as you use Google <a href="" class="underline"> services</a>,<br> 
+        and what we expect from you.</p>
+    </div>
+
+    <div class="section-c">
+        <p>These Terms of Service reflect <a href="">the way Google’s business works <span class="material-symbols-outlined">
+            open_in_new</span></a> , the laws that apply to our <br> 
+            company, <a href="">and certain things we’ve always believed to be true <span class="material-symbols-outlined">
+            open_in_new</span></a>.As a result, these Terms of <br> 
+            Service help define Google’s relationship with you as you interact with our services. For <br>
+            example, these terms include the following topic headings:</p>
+            <div class="list"><ul>  
+                <li><a href="">  What you can expect from us</a>, which describes how we provide and develop our<br>services</li>
+                <li><a href="">  What we expect from you</a>, which establishes certain rules for using our services</li>
+                <li><a href="">  Content in Google services</a>, which describes the intellectual property rights to the <br>content you find in our services — whether that content belongs to you, Google, or <br> others</li>
+                <li><a href="">  In case of problems or disagreements</a>, which describes other legal rights you have,<br> and what to expect in case someone violates these terms</li>
+            </ul></div>
+        <p>Understanding these terms is important because, by using our services, you’re agreeing <br>to these terms.</p>  
+        
+        <p>Besides these terms, we also publish a <a href="">Privacy Policy</a>. Although it’s not part of these <br> 
+            terms, we encourage you to read it to 
+        better understand how you can <a href="">update, manage,<br> export, and delete your information<span class="material-symbols-outlined">
+            open_in_new</span>.</a></p>  
+    </div>
+
+    <div class="section-d">
+    <h1>Terms</h1>
+    <h2 class="heading">Service provider</h2>
+    <p>
+        Google <a href="" class="underline">services</a> are provided by, and you’re contracting with: <br>
+        <br>
+        Google LLC <br>
+        organized under the laws of the State of Delaware, USA, and operating under the laws of <br> the USA <br>
+        <br>
+        1600 Amphitheatre Parkway <br>Mountain View, California 94043 <br>
+        USA
+    </p>
+    </div>
+
+    <div class="section-e">
+        <h2 class="heading">Age requirements</h2>
+        <p>
+            If you’re under the <a href="">age required to manage your own Google Account <span class="material-symbols-outlined">
+            open_in_new</span></a>, you must have <br> 
+            your parent or legal guardian’s permission to use a Google Account. 
+            Please have<br> your parent or legal guardian read these terms with you. <br>
+            <br>
+
+            If you’re a parent or legal guardian, and you allow your child to use the <a href="" id="sec-e-a">services</a>, then <br>
+             these terms apply to you and you’re responsible for your child’s activity on the services. <br>
+            <br>
+
+            Some Google services have additional age requirements as described in their <a href="">service- <br>
+                specific additional terms and policies.</a>
+        </p>
+
+    </div>
+
+</div>
+{% endblock content %}

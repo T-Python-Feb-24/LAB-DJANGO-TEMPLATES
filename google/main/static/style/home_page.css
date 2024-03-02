@@ -1,3 +1,18 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+
 .first{
     display: flex;
     flex-direction:row;
@@ -6,11 +21,11 @@
     column-gap :10px;   
     font-size: 18px;
     font-weight: 1;
-    margin: 0;
     border: 0;
-    padding: 0px 10px;
+    padding: 10px 20px;
 }
 
+  
 
 #sign-button{
     background-color: rgb(17, 125, 220);
@@ -35,46 +50,6 @@
        
 }
 
-.footer{
-    position: fixed;
-    display: inline-block;
-    bottom: 0;
-    display-direction: column;
-    width: 99%;   
-    height: 20%;     
-    background-color: rgba(234, 234, 234, 0.733);
-    column-gap: 20px;
-
-}
-
-.footer-content{
-    display: flex;
-}
-
-.first-footer{
-    border-color: red;
-    border-radius: 20px;
-   .left-footer{
-    display: flex;
-    flex-direction:row;
-    justify-content: left  ;
-    align-items:center;
-    column-gap :20px;   
-    margin: 0 10px;
-    
-}
-
-
-.right-footer{
-    display: flex;
-    flex-direction:row;
-    justify-content: right;
-    column-gap :20px; 
-    margin: 0 10px;
-    
-}
-
-}
 
 p{
     font-size: small;
@@ -98,7 +73,7 @@ p{
 
 .search_div{
     display: flex;
-    display-direction :row ;
+    flex-direction :row ;
     column-gap: 0px;
     align-items: center;
     border: 1px;
@@ -116,7 +91,7 @@ p{
 
 .pic{
     display: flex;
-    display-direction :row ;
+    flex-direction :row ;
     column-gap: 0px;
     margin-right: 7px;
     
@@ -127,22 +102,59 @@ p{
     border: none;
 }
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    flex-direction: column;
+    width: 100%;   
+    background-color: rgb(234, 234, 234);
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.footer h5{
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
 .left-footer{
     display: flex;
     flex-direction:row;
     justify-content: left  ;
     align-items:center;
     column-gap :20px;   
-    margin: 0 10px;
+    padding-left: 18px;
+    padding:5px;
     
 }
-
 
 .right-footer{
     display: flex;
     flex-direction:row;
     justify-content: right;
     column-gap :20px; 
-    margin: 0 10px;
-    
+    padding-right: 18px;
+    align-items: center;
 }
+
+.nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between  ;
+    padding: 0px;
+}
+
+.first-footer{
+    padding: 5px 5px;
+
+}
+
